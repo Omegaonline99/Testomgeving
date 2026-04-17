@@ -1,263 +1,1086 @@
-diff --git a/index.html b/index.html
-index c7bddc93f96adeb5eb744771bfa97b8d658b9de7..a07d84c597df59923082531c54f4db20562184b8 100644
---- a/index.html
-+++ b/index.html
-@@ -1,45 +1,234 @@
- <!DOCTYPE html>
- <html lang="nl">
- <head>
--    <meta charset="UTF-8">
--    <meta name="viewport" content="width=device-width, initial-scale=1.0">
--    <title>Beleggingsplatform | Inzicht in je vermogen</title>
--    <link rel="stylesheet" href="style.css">
--    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-+    <meta charset="UTF-8" />
-+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-+    <title>PortfoliOverzicht | Concept voor beleggersplatform</title>
-+    <meta
-+        name="description"
-+        content="PortfoliOverzicht is een concept voor een gebruiksvriendelijk platform waarin beleggers hun assets, diversificatie en groeiscenario's centraal kunnen beheren."
-+    />
-+    <link rel="preconnect" href="https://fonts.googleapis.com" />
-+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-+    <link
-+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-+        rel="stylesheet"
-+    />
-+    <link rel="stylesheet" href="style.css" />
- </head>
- <body>
--
-     <header class="navbar">
-         <div class="container nav-container">
--            <a href="#" class="logo">Portfoli<span>Overzicht</span></a>
--            
-+            <a href="#top" class="logo">Portfoli<span>Overzicht</span></a>
-             <nav>
-                 <ul class="nav-links">
--                    <li><a href="#" class="active">Home</a></li>
--                    <li><a href="#">Dashboard</a></li>
--                    <li><a href="#">Assets</a></li>
--                    <li><a href="#">Tools</a></li>
--                    <li><a href="#">Blog</a></li>
--                    <li><a href="#">Over</a></li>
-+                    <li><a href="#home" class="active">Home</a></li>
-+                    <li><a href="#doelgroep">Doelgroep</a></li>
-+                    <li><a href="#dashboard">Dashboard</a></li>
-+                    <li><a href="#tools">Tools</a></li>
-+                    <li><a href="#blog">Blog</a></li>
-+                    <li><a href="#roadmap">Roadmap</a></li>
-                 </ul>
-             </nav>
--            
--            <a href="#" class="btn-login">Inloggen / Account</a>
-+            <a href="#mvp" class="btn-login">MVP bekijken</a>
-         </div>
-     </header>
- 
--    <main>
--        <section class="hero container">
-+    <main id="top">
-+        <section id="home" class="hero container">
-             <div class="hero-content">
--                <h1>Al je beleggingen centraal in één veilig overzicht</h1>
--                <p>Een gebruiksvriendelijk platform dat je portfolio samenbrengt. Krijg inzicht in aandelen, crypto, vastgoed en meer, inclusief slimme analyses zonder technische complexiteit.</p>
-+                <p class="eyebrow">Websiteconcept</p>
-+                <h1>Een centrale plek voor al je beleggingen, inzichten en tools</h1>
-+                <p>
-+                    PortfoliOverzicht brengt aandelen, commodity’s, bonds, crypto en vastgoed samen in één
-+                    overzichtelijk platform. De focus ligt op eenvoud, visualisatie en vertrouwen: wél sterke
-+                    inzichten, géén technische complexiteit.
-+                </p>
-                 <div class="hero-buttons">
--                    <a href="#" class="btn-primary">Start direct gratis</a>
--                    <a href="#" class="btn-secondary">Bekijk de tools</a>
-+                    <a href="#waardepropositie" class="btn-primary">Ontdek de waardepropositie</a>
-+                    <a href="#functies" class="btn-secondary">Bekijk functionaliteiten</a>
-+                </div>
-+            </div>
-+            <aside class="hero-card" aria-label="Kernpunten van het concept">
-+                <h2>Kern in het kort</h2>
-+                <ul>
-+                    <li>Alles-in-één portfolio-overzicht</li>
-+                    <li>Inzicht in groei, rendement en spreiding</li>
-+                    <li>Intuïtieve calculators zonder zichtbare formules</li>
-+                    <li>Educatieve content voor betere financiële keuzes</li>
-+                </ul>
-+            </aside>
-+        </section>
-+
-+        <section id="doelgroep" class="section container">
-+            <h2>Voor wie is dit platform bedoeld?</h2>
-+            <p>
-+                De primaire doelgroep bestaat uit particuliere beleggers die overzicht zoeken, meerdere
-+                brokers of tools gebruiken en hun totale vermogen beter willen begrijpen zonder eigen
-+                spreadsheets of complexe formules.
-+            </p>
-+            <div class="grid two-col">
-+                <article class="card">
-+                    <h3>Primaire gebruiker</h3>
-+                    <ul>
-+                        <li>Gebruikt meerdere platformen en verliest overzicht</li>
-+                        <li>Wil eenvoud en gebruiksgemak</li>
-+                        <li>Zoekt visueel inzicht in plaats van technische berekeningen</li>
-+                    </ul>
-+                </article>
-+                <article class="card">
-+                    <h3>Subdoelgroepen</h3>
-+                    <ul>
-+                        <li>Beginnende beleggers met focus op grip en structuur</li>
-+                        <li>Gevorderde beleggers met meerdere asset classes</li>
-+                        <li>Lange termijn beleggers (FIRE / pensioen / vermogensgroei)</li>
-+                    </ul>
-+                </article>
-+            </div>
-+        </section>
-+
-+        <section id="waardepropositie" class="section section-alt">
-+            <div class="container">
-+                <h2>Waardepropositie</h2>
-+                <p>
-+                    Een gebruiksvriendelijk en veilig platform dat al je beleggingen samenbrengt in één
-+                    dashboard, met slimme analyses, calculators en content die je helpt betere keuzes te maken.
-+                </p>
-+                <div class="grid three-col">
-+                    <article class="card">
-+                        <h3>Richting A</h3>
-+                        <p>Alles-in-één inzicht: dashboard, assets, tools en educatie op één plek.</p>
-+                    </article>
-+                    <article class="card">
-+                        <h3>Richting B</h3>
-+                        <p>Inzicht + tools: volgen, vergelijken en toekomstscenario’s doorrekenen.</p>
-+                    </article>
-+                    <article class="card">
-+                        <h3>Richting C</h3>
-+                        <p>Zelfsturend dashboard: data-gedreven keuzes voor particuliere beleggers.</p>
-+                    </article>
-                 </div>
-             </div>
-         </section>
-+
-+        <section id="dashboard" class="section container">
-+            <h2>Platformonderdelen</h2>
-+            <div class="grid two-col">
-+                <article class="card" id="functies">
-+                    <h3>Portfolio dashboard</h3>
-+                    <ul>
-+                        <li>Totaal vermogen en rendement per periode</li>
-+                        <li>Diversificatie per asset class, sector en regio</li>
-+                        <li>Visuele grafieken met begrijpelijke inzichten</li>
-+                        <li>Focus op uitkomst, niet op onderliggende formules</li>
-+                    </ul>
-+                </article>
-+                <article class="card">
-+                    <h3>Asset-overzichten</h3>
-+                    <ul>
-+                        <li>Automatische herkenning en classificatie van assets</li>
-+                        <li>Verrijking met sector-, regio- en benchmarkcontext</li>
-+                        <li>Inzicht in weging, risico en rol in diversificatie</li>
-+                        <li>Ondersteuning voor aandelen, commodity’s, bonds, crypto en vastgoed</li>
-+                    </ul>
-+                </article>
-+                <article class="card" id="tools">
-+                    <h3>Tools (MVP-fase)</h3>
-+                    <ul>
-+                        <li>Compound interest calculator</li>
-+                        <li>DCA calculator</li>
-+                        <li>Portfolioverdeling calculator</li>
-+                        <li>Rendement calculator</li>
-+                    </ul>
-+                </article>
-+                <article class="card" id="blog">
-+                    <h3>Blog / kennisbank</h3>
-+                    <ul>
-+                        <li>Educatieve artikelen en uitleg per asset class</li>
-+                        <li>Handleidingen bij tools en marktinzichten</li>
-+                        <li>Duidelijke contentstrategie met oog voor auteursrecht en SEO</li>
-+                    </ul>
-+                </article>
-+            </div>
-+        </section>
-+
-+        <section id="mvp" class="section section-alt">
-+            <div class="container">
-+                <h2>MVP, fase 2 en premium</h2>
-+                <div class="grid three-col">
-+                    <article class="card">
-+                        <h3>MVP</h3>
-+                        <ul>
-+                            <li>Account + inloggen</li>
-+                            <li>Handmatige portfolio-invoer</li>
-+                            <li>Dashboard en diversificatie-overzicht</li>
-+                            <li>Basis analysetools</li>
-+                        </ul>
-+                    </article>
-+                    <article class="card">
-+                        <h3>Fase 2</h3>
-+                        <ul>
-+                            <li>Doelen en alerts</li>
-+                            <li>Watchlist en benchmarkvergelijking</li>
-+                            <li>Net worth tracking incl. vastgoed/cash</li>
-+                            <li>Export naar Excel/PDF</li>
-+                        </ul>
-+                    </article>
-+                    <article class="card">
-+                        <h3>Premium</h3>
-+                        <ul>
-+                            <li>Meerdere portfolio’s beheren</li>
-+                            <li>Geavanceerde performance analytics</li>
-+                            <li>Broker CSV-imports</li>
-+                            <li>Custom rapportages en premium content</li>
-+                        </ul>
-+                    </article>
-+                </div>
-+            </div>
-+        </section>
-+
-+        <section id="business" class="section container">
-+            <h2>Verdienmodel en vertrouwen</h2>
-+            <div class="grid two-col">
-+                <article class="card">
-+                    <h3>Mogelijke verdienmodellen</h3>
-+                    <ul>
-+                        <li>Freemium (gratis basis, betaalde verdieping)</li>
-+                        <li>Abonnement (maandelijks/jaarlijks)</li>
-+                        <li>Affiliate en partner-leadgeneratie</li>
-+                        <li>Template- of downloadverkoop</li>
-+                    </ul>
-+                </article>
-+                <article class="card">
-+                    <h3>Vertrouwen & veiligheid</h3>
-+                    <ul>
-+                        <li>Strikte privacy en databeveiliging (encryptie)</li>
-+                        <li>Transparantie over datagebruik en bronnen</li>
-+                        <li>Duidelijke “geen financieel advies”-disclaimer</li>
-+                        <li>Basisauthenticatie met uitbreiding naar 2FA</li>
-+                    </ul>
-+                </article>
-+            </div>
-+        </section>
-+
-+        <section id="roadmap" class="section section-alt">
-+            <div class="container">
-+                <h2>Vervolgstappen</h2>
-+                <ol class="roadmap-list">
-+                    <li><strong>Fundament:</strong> doelgroep, kernprobleem, waardepropositie en positionering aanscherpen.</li>
-+                    <li><strong>Productstructuur:</strong> pagina’s, functies en MVP scope definitief maken.</li>
-+                    <li><strong>Strategie:</strong> verdienmodel, juridische basis en contentstrategie bepalen.</li>
-+                    <li><strong>Productbrief:</strong> vertaling naar complete bouwspecificatie voor ontwikkeling.</li>
-+                </ol>
-+            </div>
-+        </section>
-     </main>
- 
-+    <footer class="footer">
-+        <div class="container footer-inner">
-+            <p>PortfoliOverzicht — conceptversie gebaseerd op de README-uitwerking.</p>
-+            <a href="#top">Terug naar boven ↑</a>
-+        </div>
-+    </footer>
- </body>
--</html>
-\ No newline at end of file
-+</html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portflow - Al je beleggingen op één heldere plek</title>
+    <style>
+        /* --- CSS VARIABELEN --- */
+        :root {
+            --primary-color: #0B1C30;
+            --secondary-color: #1A365D;
+            --accent-color: #007AFF;
+            --accent-hover: #0056b3;
+            --bg-color: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-dark: #1E293B;
+            --text-light: #64748B;
+            --border-color: #E2E8F0;
+            --success-color: #10B981;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* --- RESET & BASIS --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* --- TYPOGRAFIE --- */
+        h1, h2, h3, h4 {
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: 3rem; font-weight: 800; letter-spacing: -0.02em; }
+        h2 { font-size: 2.25rem; font-weight: 700; text-align: center; margin-bottom: 3rem; }
+        h3 { font-size: 1.25rem; font-weight: 600; }
+        
+        p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        /* --- LAYOUT & COMPONENTEN --- */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 6rem 0;
+        }
+
+        .bg-white { background-color: var(--card-bg); }
+        .bg-dark { background-color: var(--primary-color); color: white; }
+        .bg-dark h2, .bg-dark p { color: white; }
+        .bg-dark .subtitle { color: #CBD5E1; }
+
+        /* Knoppen */
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 1.5rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border-color: var(--border-color);
+            color: var(--text-dark);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--text-light);
+            background-color: #F1F5F9;
+        }
+
+        /* --- 1. HEADER / NAVIGATIE --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            background-color: var(--accent-color);
+            border-radius: 4px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-light);
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        /* --- 2. HERO SECTIE --- */
+        .hero {
+            padding-top: 10rem;
+            padding-bottom: 6rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .hero-mockup {
+            background-color: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .hero-mockup::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--accent-color);
+            border-radius: var(--radius-lg);
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .mockup-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .mockup-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .mockup-badge {
+            background-color: #D1FAE5;
+            color: var(--success-color);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+        }
+
+        /* --- KAARTEN GRIDS --- */
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+        .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #EFF6FF;
+            color: var(--accent-color);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* --- 3. WAAROM DIT PLATFORM --- */
+        .solution-banner {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .solution-banner h3 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .solution-banner p {
+            color: rgba(255,255,255,0.9);
+            margin: 0;
+        }
+
+        /* --- 4. ASSET CLASSES --- */
+        .asset-card {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .asset-card .card-icon {
+            margin: 0 auto 1rem auto;
+        }
+
+        /* --- 5. PLATFORMFUNCTIES --- */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .feature-grid:nth-child(even) {
+            direction: rtl;
+        }
+
+        .feature-grid:nth-child(even) > * {
+            direction: ltr;
+        }
+
+        .feature-text ul {
+            margin-top: 1.5rem;
+        }
+
+        .feature-text li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .feature-text li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        /* --- 6. TOOLS / CALCULATORS --- */
+        .tool-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .tool-card .btn {
+            margin-top: auto;
+            width: 100%;
+        }
+
+        /* --- 7. DASHBOARD PREVIEW --- */
+        .dashboard-container {
+            background-color: var(--card-bg);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .dashboard-nav {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 2rem;
+            color: white;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .dashboard-nav span { opacity: 0.7; }
+        .dashboard-nav span.active { opacity: 1; border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+
+        .dashboard-body {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            background-color: #F8FAFC;
+        }
+
+        .dash-panel {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .dash-panel h4 {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Bar chart mockup */
+        .allocation-bar {
+            margin-bottom: 1rem;
+        }
+        .allocation-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .progress-bg {
+            width: 100%;
+            height: 8px;
+            background-color: #E2E8F0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        /* Top holdings list */
+        .holding-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .holding-item:last-child { border-bottom: none; }
+        .holding-name { font-weight: 600; font-size: 0.875rem; }
+        .holding-ticker { font-size: 0.75rem; color: var(--text-light); }
+        .holding-value { font-weight: 600; text-align: right; }
+
+        /* --- 8. HOE HET WERKT --- */
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .steps-container::before {
+            content: '';
+            position: absolute;
+            top: 24px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--border-color);
+            z-index: 1;
+        }
+
+        .step {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 22%;
+            background-color: var(--bg-color);
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 0 auto 1rem auto;
+            border: 4px solid var(--bg-color);
+        }
+
+        /* --- 9. BLOG / KENNISBANK --- */
+        .blog-card {
+            padding: 0;
+            overflow: hidden;
+        }
+        .blog-image {
+            width: 100%;
+            height: 160px;
+            background: linear-gradient(135deg, #E2E8F0 0%, #CBD5E1 100%);
+        }
+        .blog-content {
+            padding: 1.5rem;
+        }
+        .blog-content h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+        .blog-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* --- 10. BETROUWBAARHEID --- */
+        .trust-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .trust-icons {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* --- 11. FOOTER --- */
+        footer {
+            background-color: var(--primary-color);
+            color: #94A3B8;
+            padding: 4rem 0 2rem 0;
+            border-top: 1px solid #1E293B;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col a {
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #1E293B;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+        }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            margin-top: 1rem;
+        }
+
+        /* --- RESPONSIVE DESIGN --- */
+        @media (max-width: 992px) {
+            .hero { grid-template-columns: 1fr; text-align: center; }
+            .hero-buttons { justify-content: center; }
+            .grid-4, .grid-5 { grid-template-columns: repeat(2, 1fr); }
+            .dashboard-body { grid-template-columns: 1fr; }
+            .feature-grid { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+            .feature-grid:nth-child(even) { direction: ltr; }
+            .feature-text ul { display: inline-block; text-align: left; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-actions .btn-outline { display: none; }
+            .mobile-menu-btn { display: block; }
+            .grid-3, .grid-4, .grid-5 { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 2.25rem; }
+            .steps-container { flex-direction: column; gap: 2rem; }
+            .steps-container::before { display: none; }
+            .step { width: 100%; display: flex; align-items: center; text-align: left; gap: 1rem; }
+            .step-number { margin: 0; }
+            .trust-icons { flex-direction: column; gap: 2rem; }
+            .footer-bottom { flex-direction: column; text-align: center; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <div class="logo-icon"></div>
+                    Portflow
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#functies">Dashboard</a></li>
+                    <li><a href="#assets">Assets</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#" class="btn btn-outline">Inloggen</a>
+                    <a href="#" class="btn btn-primary">Start gratis</a>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-content">
+                <h1>Al je beleggingen op één heldere plek.</h1>
+                <p class="subtitle">Krijg direct grip op je totale vermogen over alle asset classes heen. Verwijder de ruis, vergeet complexe spreadsheets en stuur op inzicht met onze intuïtieve tools en dashboards.</p>
+                <div class="hero-buttons">
+                    <a href="#dashboard-preview" class="btn btn-primary">Bekijk dashboard</a>
+                    <a href="#tools" class="btn btn-outline">Ontdek de tools</a>
+                </div>
+            </div>
+            
+            <div class="hero-mockup">
+                <div class="mockup-header">
+                    <div>
+                        <p style="margin:0; font-size: 0.875rem;">Totaal Vermogen</p>
+                        <div class="mockup-value">€ 142.850</div>
+                    </div>
+                    <div class="mockup-badge">+ 8.4%</div>
+                </div>
+                <div style="height: 120px; background: linear-gradient(180deg, rgba(0, 122, 255, 0.1) 0%, rgba(255,255,255,0) 100%); border-bottom: 2px solid var(--accent-color); border-radius: 4px; position: relative;">
+                    <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="position: absolute; bottom: 0; width: 100%; height: 100%;">
+                        <path d="M0,30 L10,25 L30,28 L50,15 L70,20 L90,5 L100,0" fill="none" stroke="var(--accent-color)" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white">
+            <div class="container">
+                <h2>Waarom beleggers overstappen</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-icon">📉</div>
+                        <h3>Versnipperd overzicht</h3>
+                        <p>Aandelen bij broker A, crypto op een exchange en vastgoed in Excel. Het overzicht ontbreekt waardoor je onnodig risico loopt.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⏳</div>
+                        <h3>Te veel tijd kwijt</h3>
+                        <p>Urenlang handmatig koersen updaten en rendementen berekenen is verleden tijd. Focus op strategie, niet op data-invoer.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🧩</div>
+                        <h3>Complexe tools</h3>
+                        <p>Geen onbegrijpelijke formules of technische drempels. Wij maken professionele inzichten toegankelijk voor iedereen.</p>
+                    </div>
+                </div>
+
+                <div class="solution-banner">
+                    <h3>De oplossing: Eén centrale, veilige omgeving</h3>
+                    <p>Portflow combineert al je assets tot één overzichtelijk dashboard, zonder de technische complexiteit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="assets" class="container">
+            <h2>Ondersteunde Asset Classes</h2>
+            <p class="subtitle" style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">Bouw een gediversifieerd portfolio en houd alles bij op één plek.</p>
+            
+            <div class="grid-5">
+                <div class="card asset-card">
+                    <div class="card-icon">📈</div>
+                    <h3>Aandelen</h3>
+                    <p style="font-size: 0.875rem;">Individuele aandelen, ETF's en indexfondsen.</p>
+                </div>
+                <div class="card asset-card">
+                    <div class="card-icon">🛢️</div>
+                    <h3>Commodity's</h3>
+                    <p style="font-size: 0.875rem;">Goud, zilver en overige grondstoffen.</p>
+                </div>
+                <div class="card asset-card">
+                    <div class="card-icon">📜</div>
+                    <h3>Bonds</h3>
+                    <p style="font-size: 0.875rem;">Staatsobligaties en bedrijfsleningen.</p>
+                </div>
+                <div class="card asset-card">
+                    <div class="card-icon">₿</div>
+                    <h3>Crypto</h3>
+                    <p style="font-size: 0.875rem;">Bitcoin, Ethereum en diverse altcoins.</p>
+                </div>
+                <div class="card asset-card">
+                    <div class="card-icon">🏢</div>
+                    <h3>Vastgoed</h3>
+                    <p style="font-size: 0.875rem;">REITs, fondsen en fysieke panden.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="functies" class="bg-white">
+            <div class="container">
+                <h2>Inzicht zonder de wiskunde</h2>
+                
+                <div class="feature-grid">
+                    <div class="feature-mockup">
+                        <div class="hero-mockup" style="padding: 1rem;">
+                            <div style="display:flex; height: 30px; border-radius: 15px; overflow: hidden; margin-top: 1rem;">
+                                <div style="width: 45%; background: var(--accent-color);"></div>
+                                <div style="width: 25%; background: #38BDF8;"></div>
+                                <div style="width: 15%; background: #818CF8;"></div>
+                                <div style="width: 15%; background: #C084FC;"></div>
+                            </div>
+                            <div style="display:flex; justify-content: space-between; margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-light);">
+                                <span>Aandelen (45%)</span>
+                                <span>Crypto (15%)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Spreiding & Diversificatie</h3>
+                        <p>Zie in één oogopslag of je portfolio in balans is. Wij vertalen jouw posities naar heldere visuele overzichten.</p>
+                        <ul>
+                            <li>Automatische categorisatie</li>
+                            <li>Risicospreiding per sector of regio</li>
+                            <li>Geen formules nodig</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-mockup">
+                        <div class="hero-mockup" style="padding: 1.5rem; text-align: center;">
+                            <div style="font-size: 2rem; color: var(--success-color); font-weight: bold;">+ € 12.450</div>
+                            <p style="margin: 0; font-size: 0.875rem;">Gerealiseerd rendement (YTD)</p>
+                        </div>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Rendement per periode</h3>
+                        <p>Begrijp precies wat je investeringen opleveren. Selecteer een periode en bekijk de absolute en procentuele groei.</p>
+                        <ul>
+                            <li>Helder overzicht van winst en verlies</li>
+                            <li>Inclusief dividend en rente</li>
+                            <li>Vergelijk met benchmarks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="container">
+            <h2>Eenvoudige Beleggerstools</h2>
+            <p class="subtitle" style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">Bereken scenario's en plan je toekomst zonder zelf in Excel te hoeven bouwen.</p>
+            
+            <div class="grid-4">
+                <div class="card tool-card">
+                    <h3>Rente-op-rente (Compound)</h3>
+                    <p>Bereken hoe jouw vermogen exponentieel groeit over de lange termijn door het herinvesteren van rendement.</p>
+                    <a href="#" class="btn btn-outline">Open calculator</a>
+                </div>
+                <div class="card tool-card">
+                    <h3>DCA Simulator</h3>
+                    <p>Ontdek het effect van maandelijks inleggen (Dollar Cost Averaging) vergeleken met een eenmalige inleg.</p>
+                    <a href="#" class="btn btn-outline">Open simulator</a>
+                </div>
+                <div class="card tool-card">
+                    <h3>Portfolio Verdeling</h3>
+                    <p>Speel met verhoudingen tussen veilig (bonds) en risico (aandelen/crypto) en zie de impact op je profiel.</p>
+                    <a href="#" class="btn btn-outline">Open tool</a>
+                </div>
+                <div class="card tool-card">
+                    <h3>Rendement Doelzoeker</h3>
+                    <p>Weet je wat je einddoel is? Bereken hoeveel je maandelijks moet inleggen om dat bedrag te bereiken.</p>
+                    <a href="#" class="btn btn-outline">Open calculator</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard-preview" class="bg-dark">
+            <div class="container">
+                <h2>Jouw toekomstige commandocentrum</h2>
+                <p class="subtitle" style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">Een voorproefje van hoe jouw overzicht eruit kan zien.</p>
+
+                <div class="dashboard-container">
+                    <div class="dashboard-nav">
+                        <span class="active">Overzicht</span>
+                        <span>Prestaties</span>
+                        <span>Transacties</span>
+                        <span>Instellingen</span>
+                    </div>
+                    <div class="dashboard-body">
+                        <div>
+                            <div class="dash-panel" style="margin-bottom: 2rem;">
+                                <h4>Vermogensontwikkeling</h4>
+                                <div style="display: flex; gap: 2rem; margin-bottom: 1rem;">
+                                    <div>
+                                        <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">€ 284.100</div>
+                                        <div style="font-size: 0.875rem; color: var(--text-light);">Huidige waarde</div>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 1.5rem; font-weight: bold; color: var(--success-color);">+ € 31.250</div>
+                                        <div style="font-size: 0.875rem; color: var(--text-light);">Totale winst</div>
+                                    </div>
+                                </div>
+                                <div style="height: 150px; background: #F1F5F9; border-radius: var(--radius-md); display: flex; align-items: flex-end; padding: 1rem; gap: 4px;">
+                                    <div style="width: 10%; height: 30%; background: #CBD5E1; border-radius: 2px;"></div>
+                                    <div style="width: 10%; height: 40%; background: #CBD5E1; border-radius: 2px;"></div>
+                                    <div style="width: 10%; height: 35%; background: #CBD5E1; border-radius: 2px;"></div>
+                                    <div style="width: 10%; height: 50%; background: #CBD5E1; border-radius: 2px;"></div>
+                                    <div style="width: 10%; height: 60%; background: #CBD5E1; border-radius: 2px;"></div>
+                                    <div style="width: 10%; height: 55%; background: #CBD5E1; border-radius: 2px;"></div>
+                                    <div style="width: 10%; height: 70%; background: var(--accent-color); border-radius: 2px;"></div>
+                                    <div style="width: 10%; height: 85%; background: var(--accent-color); border-radius: 2px;"></div>
+                                    <div style="width: 10%; height: 80%; background: var(--accent-color); border-radius: 2px;"></div>
+                                    <div style="width: 10%; height: 100%; background: var(--accent-color); border-radius: 2px;"></div>
+                                </div>
+                            </div>
+
+                            <div class="dash-panel">
+                                <h4>Top Holdings</h4>
+                                <div class="holding-item">
+                                    <div>
+                                        <div class="holding-name">S&P 500 ETF</div>
+                                        <div class="holding-ticker">VUSA.AS</div>
+                                    </div>
+                                    <div>
+                                        <div class="holding-value">€ 85.000</div>
+                                        <div class="holding-ticker" style="color: var(--success-color);">+ 12.4%</div>
+                                    </div>
+                                </div>
+                                <div class="holding-item">
+                                    <div>
+                                        <div class="holding-name">Bitcoin</div>
+                                        <div class="holding-ticker">BTC</div>
+                                    </div>
+                                    <div>
+                                        <div class="holding-value">€ 32.400</div>
+                                        <div class="holding-ticker" style="color: var(--success-color);">+ 45.2%</div>
+                                    </div>
+                                </div>
+                                <div class="holding-item">
+                                    <div>
+                                        <div class="holding-name">Apple Inc.</div>
+                                        <div class="holding-ticker">AAPL</div>
+                                    </div>
+                                    <div>
+                                        <div class="holding-value">€ 15.200</div>
+                                        <div class="holding-ticker" style="color: var(--text-light);">- 1.2%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="dash-panel" style="height: 100%;">
+                                <h4>Asset Allocatie</h4>
+                                
+                                <div class="allocation-bar">
+                                    <div class="allocation-info"><span>Aandelen</span> <span>60%</span></div>
+                                    <div class="progress-bg"><div class="progress-fill" style="width: 60%; background-color: var(--accent-color);"></div></div>
+                                </div>
+                                
+                                <div class="allocation-bar">
+                                    <div class="allocation-info"><span>Crypto</span> <span>15%</span></div>
+                                    <div class="progress-bg"><div class="progress-fill" style="width: 15%; background-color: #38BDF8;"></div></div>
+                                </div>
+
+                                <div class="allocation-bar">
+                                    <div class="allocation-info"><span>Vastgoed</span> <span>15%</span></div>
+                                    <div class="progress-bg"><div class="progress-fill" style="width: 15%; background-color: #818CF8;"></div></div>
+                                </div>
+
+                                <div class="allocation-bar">
+                                    <div class="allocation-info"><span>Cash / Bonds</span> <span>10%</span></div>
+                                    <div class="progress-bg"><div class="progress-fill" style="width: 10%; background-color: #C084FC;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container bg-white">
+            <h2>Starten is eenvoudig</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Verken</h3>
+                    <p style="font-size: 0.875rem;">Probeer onze gratis tools en calculators zonder account.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Account</h3>
+                    <p style="font-size: 0.875rem;">Maak binnen 1 minuut veilig een gratis profiel aan.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Voeg toe</h3>
+                    <p style="font-size: 0.875rem;">Voer eenvoudig je posities of inlegbedragen in.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Inzicht</h3>
+                    <p style="font-size: 0.875rem;">Krijg direct een helder overzicht van je totale portfolio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="container">
+            <h2>Kennisbank</h2>
+            <div class="grid-3">
+                <article class="card blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Strategie</span>
+                        <h3>Hoe diversificatie je portfolio sterker maakt</h3>
+                        <p style="font-size: 0.875rem;">Ontdek waarom je niet al je eieren in één mandje moet leggen en hoe je risico's afbouwt.</p>
+                    </div>
+                </article>
+                <article class="card blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Lange termijn</span>
+                        <h3>Wat DCA betekent voor jouw rendement</h3>
+                        <p style="font-size: 0.875rem;">Dollar Cost Averaging haalt de emotie uit beleggen. Lees hoe deze methode in de praktijk werkt.</p>
+                    </div>
+                </article>
+                <article class="card blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Basis</span>
+                        <h3>Verschillen tussen aandelen en bonds</h3>
+                        <p style="font-size: 0.875rem;">Een heldere uitleg van de twee meest bekende asset classes en hun rol in een portfolio.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-white">
+            <div class="container trust-section">
+                <h2>Jouw data, jouw privacy</h2>
+                <p>We bouwen Portflow met veiligheid als fundament. Wij verkopen geen data en bieden geen financieel advies. Gewoon eerlijke software voor jouw overzicht.</p>
+                
+                <div class="trust-icons">
+                    <div class="trust-item">
+                        <div class="card-icon" style="background: transparent; border: 1px solid var(--border-color);">🔒</div>
+                        <span style="font-weight: 600;">Versleutelde data</span>
+                    </div>
+                    <div class="trust-item">
+                        <div class="card-icon" style="background: transparent; border: 1px solid var(--border-color);">👁️</div>
+                        <span style="font-weight: 600;">Alleen voor jou zichtbaar</span>
+                    </div>
+                    <div class="trust-item">
+                        <div class="card-icon" style="background: transparent; border: 1px solid var(--border-color);">⚖️</div>
+                        <span style="font-weight: 600;">Geen financieel advies</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="grid-column: span 1;">
+                    <div class="footer-logo">
+                        <div class="logo-icon" style="background-color: white;"></div>
+                        Portflow
+                    </div>
+                    <p style="font-size: 0.875rem; color: #94A3B8; margin-top: 1rem;">
+                        Het platform voor de particuliere belegger die streeft naar overzicht en eenvoud, over alle asset classes heen.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#functies">Dashboard</a></li>
+                        <li><a href="#assets">Asset Classes</a></li>
+                        <li><a href="#tools">Tools & Calculators</a></li>
+                        <li><a href="#">Prijzen</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Kennis</h4>
+                    <ul>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#">Woordenboek</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Bedrijf</h4>
+                    <ul>
+                        <li><a href="#">Over ons</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacybeleid</a></li>
+                        <li><a href="#">Voorwaarden</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Portflow. Alle rechten voorbehouden.</div>
+                <div class="disclaimer">
+                    Disclaimer: Dit platform biedt tools en inzicht voor informatieve doeleinden, maar geeft geen financieel advies. Beleggen brengt risico's met zich mee. Je kunt je inleg (deels) verliezen.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Voegt een subtiele schaduw toe aan de header bij het scrollen
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.style.boxShadow = '0 4px 6px -1px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Simpele mobile menu toggle (visueel)
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', () => {
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '80px';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.backgroundColor = 'white';
+                navLinks.style.padding = '1rem';
+                navLinks.style.boxShadow = '0 4px 6px -1px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
