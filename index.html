@@ -1,45 +1,263 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beleggingsplatform | Inzicht in je vermogen</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Portfoli<span>Overzicht</span></a>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Assets</a></li>
-                    <li><a href="#">Tools</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Over</a></li>
-                </ul>
-            </nav>
-            
-            <a href="#" class="btn-login">Inloggen / Account</a>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero container">
-            <div class="hero-content">
-                <h1>Al je beleggingen centraal in één veilig overzicht</h1>
-                <p>Een gebruiksvriendelijk platform dat je portfolio samenbrengt. Krijg inzicht in aandelen, crypto, vastgoed en meer, inclusief slimme analyses zonder technische complexiteit.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn-primary">Start direct gratis</a>
-                    <a href="#" class="btn-secondary">Bekijk de tools</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-</body>
-</html>
+diff --git a/index.html b/index.html
+index c7bddc93f96adeb5eb744771bfa97b8d658b9de7..a07d84c597df59923082531c54f4db20562184b8 100644
+--- a/index.html
++++ b/index.html
+@@ -1,45 +1,234 @@
+ <!DOCTYPE html>
+ <html lang="nl">
+ <head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Beleggingsplatform | Inzicht in je vermogen</title>
+-    <link rel="stylesheet" href="style.css">
+-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>PortfoliOverzicht | Concept voor beleggersplatform</title>
++    <meta
++        name="description"
++        content="PortfoliOverzicht is een concept voor een gebruiksvriendelijk platform waarin beleggers hun assets, diversificatie en groeiscenario's centraal kunnen beheren."
++    />
++    <link rel="preconnect" href="https://fonts.googleapis.com" />
++    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++    <link
++        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
++        rel="stylesheet"
++    />
++    <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+-
+     <header class="navbar">
+         <div class="container nav-container">
+-            <a href="#" class="logo">Portfoli<span>Overzicht</span></a>
+-            
++            <a href="#top" class="logo">Portfoli<span>Overzicht</span></a>
+             <nav>
+                 <ul class="nav-links">
+-                    <li><a href="#" class="active">Home</a></li>
+-                    <li><a href="#">Dashboard</a></li>
+-                    <li><a href="#">Assets</a></li>
+-                    <li><a href="#">Tools</a></li>
+-                    <li><a href="#">Blog</a></li>
+-                    <li><a href="#">Over</a></li>
++                    <li><a href="#home" class="active">Home</a></li>
++                    <li><a href="#doelgroep">Doelgroep</a></li>
++                    <li><a href="#dashboard">Dashboard</a></li>
++                    <li><a href="#tools">Tools</a></li>
++                    <li><a href="#blog">Blog</a></li>
++                    <li><a href="#roadmap">Roadmap</a></li>
+                 </ul>
+             </nav>
+-            
+-            <a href="#" class="btn-login">Inloggen / Account</a>
++            <a href="#mvp" class="btn-login">MVP bekijken</a>
+         </div>
+     </header>
+ 
+-    <main>
+-        <section class="hero container">
++    <main id="top">
++        <section id="home" class="hero container">
+             <div class="hero-content">
+-                <h1>Al je beleggingen centraal in één veilig overzicht</h1>
+-                <p>Een gebruiksvriendelijk platform dat je portfolio samenbrengt. Krijg inzicht in aandelen, crypto, vastgoed en meer, inclusief slimme analyses zonder technische complexiteit.</p>
++                <p class="eyebrow">Websiteconcept</p>
++                <h1>Een centrale plek voor al je beleggingen, inzichten en tools</h1>
++                <p>
++                    PortfoliOverzicht brengt aandelen, commodity’s, bonds, crypto en vastgoed samen in één
++                    overzichtelijk platform. De focus ligt op eenvoud, visualisatie en vertrouwen: wél sterke
++                    inzichten, géén technische complexiteit.
++                </p>
+                 <div class="hero-buttons">
+-                    <a href="#" class="btn-primary">Start direct gratis</a>
+-                    <a href="#" class="btn-secondary">Bekijk de tools</a>
++                    <a href="#waardepropositie" class="btn-primary">Ontdek de waardepropositie</a>
++                    <a href="#functies" class="btn-secondary">Bekijk functionaliteiten</a>
++                </div>
++            </div>
++            <aside class="hero-card" aria-label="Kernpunten van het concept">
++                <h2>Kern in het kort</h2>
++                <ul>
++                    <li>Alles-in-één portfolio-overzicht</li>
++                    <li>Inzicht in groei, rendement en spreiding</li>
++                    <li>Intuïtieve calculators zonder zichtbare formules</li>
++                    <li>Educatieve content voor betere financiële keuzes</li>
++                </ul>
++            </aside>
++        </section>
++
++        <section id="doelgroep" class="section container">
++            <h2>Voor wie is dit platform bedoeld?</h2>
++            <p>
++                De primaire doelgroep bestaat uit particuliere beleggers die overzicht zoeken, meerdere
++                brokers of tools gebruiken en hun totale vermogen beter willen begrijpen zonder eigen
++                spreadsheets of complexe formules.
++            </p>
++            <div class="grid two-col">
++                <article class="card">
++                    <h3>Primaire gebruiker</h3>
++                    <ul>
++                        <li>Gebruikt meerdere platformen en verliest overzicht</li>
++                        <li>Wil eenvoud en gebruiksgemak</li>
++                        <li>Zoekt visueel inzicht in plaats van technische berekeningen</li>
++                    </ul>
++                </article>
++                <article class="card">
++                    <h3>Subdoelgroepen</h3>
++                    <ul>
++                        <li>Beginnende beleggers met focus op grip en structuur</li>
++                        <li>Gevorderde beleggers met meerdere asset classes</li>
++                        <li>Lange termijn beleggers (FIRE / pensioen / vermogensgroei)</li>
++                    </ul>
++                </article>
++            </div>
++        </section>
++
++        <section id="waardepropositie" class="section section-alt">
++            <div class="container">
++                <h2>Waardepropositie</h2>
++                <p>
++                    Een gebruiksvriendelijk en veilig platform dat al je beleggingen samenbrengt in één
++                    dashboard, met slimme analyses, calculators en content die je helpt betere keuzes te maken.
++                </p>
++                <div class="grid three-col">
++                    <article class="card">
++                        <h3>Richting A</h3>
++                        <p>Alles-in-één inzicht: dashboard, assets, tools en educatie op één plek.</p>
++                    </article>
++                    <article class="card">
++                        <h3>Richting B</h3>
++                        <p>Inzicht + tools: volgen, vergelijken en toekomstscenario’s doorrekenen.</p>
++                    </article>
++                    <article class="card">
++                        <h3>Richting C</h3>
++                        <p>Zelfsturend dashboard: data-gedreven keuzes voor particuliere beleggers.</p>
++                    </article>
+                 </div>
+             </div>
+         </section>
++
++        <section id="dashboard" class="section container">
++            <h2>Platformonderdelen</h2>
++            <div class="grid two-col">
++                <article class="card" id="functies">
++                    <h3>Portfolio dashboard</h3>
++                    <ul>
++                        <li>Totaal vermogen en rendement per periode</li>
++                        <li>Diversificatie per asset class, sector en regio</li>
++                        <li>Visuele grafieken met begrijpelijke inzichten</li>
++                        <li>Focus op uitkomst, niet op onderliggende formules</li>
++                    </ul>
++                </article>
++                <article class="card">
++                    <h3>Asset-overzichten</h3>
++                    <ul>
++                        <li>Automatische herkenning en classificatie van assets</li>
++                        <li>Verrijking met sector-, regio- en benchmarkcontext</li>
++                        <li>Inzicht in weging, risico en rol in diversificatie</li>
++                        <li>Ondersteuning voor aandelen, commodity’s, bonds, crypto en vastgoed</li>
++                    </ul>
++                </article>
++                <article class="card" id="tools">
++                    <h3>Tools (MVP-fase)</h3>
++                    <ul>
++                        <li>Compound interest calculator</li>
++                        <li>DCA calculator</li>
++                        <li>Portfolioverdeling calculator</li>
++                        <li>Rendement calculator</li>
++                    </ul>
++                </article>
++                <article class="card" id="blog">
++                    <h3>Blog / kennisbank</h3>
++                    <ul>
++                        <li>Educatieve artikelen en uitleg per asset class</li>
++                        <li>Handleidingen bij tools en marktinzichten</li>
++                        <li>Duidelijke contentstrategie met oog voor auteursrecht en SEO</li>
++                    </ul>
++                </article>
++            </div>
++        </section>
++
++        <section id="mvp" class="section section-alt">
++            <div class="container">
++                <h2>MVP, fase 2 en premium</h2>
++                <div class="grid three-col">
++                    <article class="card">
++                        <h3>MVP</h3>
++                        <ul>
++                            <li>Account + inloggen</li>
++                            <li>Handmatige portfolio-invoer</li>
++                            <li>Dashboard en diversificatie-overzicht</li>
++                            <li>Basis analysetools</li>
++                        </ul>
++                    </article>
++                    <article class="card">
++                        <h3>Fase 2</h3>
++                        <ul>
++                            <li>Doelen en alerts</li>
++                            <li>Watchlist en benchmarkvergelijking</li>
++                            <li>Net worth tracking incl. vastgoed/cash</li>
++                            <li>Export naar Excel/PDF</li>
++                        </ul>
++                    </article>
++                    <article class="card">
++                        <h3>Premium</h3>
++                        <ul>
++                            <li>Meerdere portfolio’s beheren</li>
++                            <li>Geavanceerde performance analytics</li>
++                            <li>Broker CSV-imports</li>
++                            <li>Custom rapportages en premium content</li>
++                        </ul>
++                    </article>
++                </div>
++            </div>
++        </section>
++
++        <section id="business" class="section container">
++            <h2>Verdienmodel en vertrouwen</h2>
++            <div class="grid two-col">
++                <article class="card">
++                    <h3>Mogelijke verdienmodellen</h3>
++                    <ul>
++                        <li>Freemium (gratis basis, betaalde verdieping)</li>
++                        <li>Abonnement (maandelijks/jaarlijks)</li>
++                        <li>Affiliate en partner-leadgeneratie</li>
++                        <li>Template- of downloadverkoop</li>
++                    </ul>
++                </article>
++                <article class="card">
++                    <h3>Vertrouwen & veiligheid</h3>
++                    <ul>
++                        <li>Strikte privacy en databeveiliging (encryptie)</li>
++                        <li>Transparantie over datagebruik en bronnen</li>
++                        <li>Duidelijke “geen financieel advies”-disclaimer</li>
++                        <li>Basisauthenticatie met uitbreiding naar 2FA</li>
++                    </ul>
++                </article>
++            </div>
++        </section>
++
++        <section id="roadmap" class="section section-alt">
++            <div class="container">
++                <h2>Vervolgstappen</h2>
++                <ol class="roadmap-list">
++                    <li><strong>Fundament:</strong> doelgroep, kernprobleem, waardepropositie en positionering aanscherpen.</li>
++                    <li><strong>Productstructuur:</strong> pagina’s, functies en MVP scope definitief maken.</li>
++                    <li><strong>Strategie:</strong> verdienmodel, juridische basis en contentstrategie bepalen.</li>
++                    <li><strong>Productbrief:</strong> vertaling naar complete bouwspecificatie voor ontwikkeling.</li>
++                </ol>
++            </div>
++        </section>
+     </main>
+ 
++    <footer class="footer">
++        <div class="container footer-inner">
++            <p>PortfoliOverzicht — conceptversie gebaseerd op de README-uitwerking.</p>
++            <a href="#top">Terug naar boven ↑</a>
++        </div>
++    </footer>
+ </body>
+-</html>
+\ No newline at end of file
++</html>
